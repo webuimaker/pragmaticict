@@ -1,13 +1,12 @@
 *{margin: 0; padding: 0;}
+/*
 html, body{}
-
-
+*/
 /***********Header***********/
 header{
 	background: #3e4753;
 	color: #fff;
 }
-
 .navbar-expand-lg .navbar-collapse {
    justify-content: flex-end;
 }
