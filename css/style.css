@@ -1,38 +1,6 @@
 *{margin: 0; padding: 0;}
 html, body{}
 
-/***********Fonts***********/
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../fonts/SegoeUI-Italic.woff2') format('woff2'),
-        url('../fonts/SegoeUI-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
-        url('../fonts/SegoeUI-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../fonts/SegoeUI.woff2') format('woff2'),
-        url('../fonts/SegoeUI.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('../fonts/SegoeUI-BoldItalic.woff2') format('woff2'),
-        url('../fonts/SegoeUI-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
 
 /***********Header***********/
 header{
@@ -73,43 +41,49 @@ p a:hover{
 
 /***********Header***********/
 
-/***********Heading***********/
-#heading{
-	
-	background: rgb(153, 153, 153);
+/***********Picture***********/
+.picture{position: relative;}
+.heading{
 	padding-top:25px;
 	padding-bottom:40px;
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); width: 100%; height: auto; flex-shrink: 0;
 }
 
-#heading h1{
+.heading h1{
 	color:#fff;
-	font-size:50px; 
+	font-size:60px; 
 	margin-bottom:0;
 	font-weight:600;
 }
 
-/***********Heading***********/
+/***********Picture***********/
 
 /***********Content***********/
 .mdlsection hr{border-top:1px dotted #e4e9f0;}
 .sub-head{padding-top:20px; color: #33a5da;}
-.sub-head h3{font-size:33px; font-weight:600}
+.sub-head h2{font-size:50px;}
 .project{padding-bottom: 30px; padding-top:8px;}
-.project h4{color: #33a5da;font-size:25px; font-weight:500;}
-.project a{color: #000;}
+.project h3{color: #33a5da;font-size:33px; font-weight:500;}
+.project a{color: #000;font-size: 1.25rem;font-weight: 300;}
 .project a:hover{color: #33a5da; -webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;}
 .project li {list-style-position: inside;}
 .employers{padding-bottom: 50px;}
-.employers h4{color: #33a5da; font-size:30px; margin-bottom:0;}
-.employers li{list-style-position: inside;}
+.employers p{font-size: 1.25rem;font-weight: 300;}
+.employers h3{color: #33a5da; font-size:50px; margin-bottom:0;}
+.employers li{list-style-position: inside;font-size: 1.25rem;font-weight: 300;}
 .seekers{padding-bottom: 50px;}
-.seekers h4{color: #33a5da;	font-size: 30px;}
-.seekers li{list-style-position: inside;}
+.seekers p{font-size: 1.25rem;font-weight: 300;}
+.seekers h3{color: #33a5da;	font-size: 50px;}
+.seekers li{list-style-position: inside;font-size: 1.25rem;font-weight: 300;}
 .data{padding-bottom: 70px;}
-.data h4{color: #33a5da; font-size:30px;}
-.data li{list-style-position: inside;}
+.data p{font-size: 1.25rem;font-weight: 300;}
+.data h3{color: #33a5da; font-size:50px;}
+.data li{list-style-position: inside;font-size: 1.25rem;font-weight: 300;}
 .data li a{
-	color:#000;
+	color: #33a5da;
 }
 .data li a:hover{
 	color: #33a5da;
@@ -124,14 +98,20 @@ p a:hover{
 footer{
 	padding-top: 30px;
 	background: #3e4753;
-	color: #fff;
+	color: #e4e4e4;
 }
 
 footer h4{
 	font-size: 24.5px;
 }
 .bar{padding-bottom:25px;}
-
+footer p{
+	color: #fff;
+	font-size: 14px;
+}
+footer p a{
+	color: #fff;
+}
 footer p a:hover{
 	color: #33a5da; -webkit-transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;transition:all 0.4s ease-in-out;
 }
@@ -163,10 +143,10 @@ footer .social li a{width:28px;height:28px;display:block;background-position:0 0
 #copyright{
 	border-top: 1px solid #777;
 	padding: 5px 10px;
-	font-size: 12px; 
+	font-size: 14px; 
 }
-#copyright p a{color:#33a5da}
-#copyright p a:hover{color:#fff}
+#copyright p a{color:#33a5da; font-size: 14px;}
+#copyright p a:hover{color:#fff;}
 /***********Footer***********/
 
 
@@ -177,17 +157,33 @@ footer .social li a{width:28px;height:28px;display:block;background-position:0 0
 	.navbar-light .navbar-toggler-icon{background:url(../images/menuicon.png) no-repeat !important;}
 	.navbar-toggler{padding:10px .75rem 2px;}
 	.navbar-toggler-icon span{display:none;}
+	.heading{padding-top: 15px; padding-bottom: 19px;}
+.heading h1 {font-size: 40px;}
+.sub-head h2{font-size:40px;}
 }
 
 @media screen and (max-width:767px) {
 .navbar-toggler-icon span{display:none;}
-#heading h1{font-size:24px;}
-.sub-head h3{font-size:24px;}
+.heading h1{font-size:40px;}
+.sub-head h2{font-size:24px;}
+.heading{padding-top: 15px; padding-bottom: 19px;}
+.heading h1 {font-size: 30px;}
+.mdlsection .project h3{font-size: 20px}
+.mdlsection .project li a{font-size: 15px}
+.mdlsection h3{font-size: 24px}
+.mdlsection p{font-size:15px}
+.mdlsection li{font-size:15px}
+
+footer .row{flex-direction: column;}
 }
 
 @media screen and (max-width:479px) {
 .navbar-light .navbar-toggler{width:100%; margin-top:8px;}
 .navbar-toggler-icon{float:left;}
 .navbar-toggler-icon span{display:block; padding-left:38px; color:#fff;}
+.heading {padding-top: 5px; padding-bottom: 5px;}
+.heading h1 {font-size: 25px;}
+
+footer .row{flex-direction: column;}
 }
 
